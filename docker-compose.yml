@@ -1,7 +1,7 @@
 version: '3.7'
 
 services:
- Cloud2020-88732:
+ Cloud2020-88727:
   image: mysql:5
   environment:
    MYSQL_ROOT_USER: mkozak
