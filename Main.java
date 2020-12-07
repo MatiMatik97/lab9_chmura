@@ -30,13 +30,13 @@ public class Main {
                 sql = "CREATE TABLE osoby (id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, imie VARCHAR(20) NOT NULL, nazwisko VARCHAR(20) NOT NULL, email VARCHAR(30))";
                 statement.executeUpdate(sql);
 
-                sql = "INSERT INTO Users VALUES (1, 'Jan', 'Kowalski', 'jan@kowalski.pl')";
+                sql = "INSERT INTO osoby VALUES (1, 'Jan', 'Kowalski', 'jan@kowalski.pl')";
                 statement.executeUpdate(sql);
 
-                sql = "INSERT INTO Users VALUES (2, 'Anna', 'Kowalska', 'anna@kowalska.pl')";
+                sql = "INSERT INTO osoby VALUES (2, 'Anna', 'Kowalska', 'anna@kowalska.pl')";
                 statement.executeUpdate(sql);
 
-                sql = "INSERT INTO Users VALUES (3, 'Mateusz', 'Kozak', 'mateusz@kozak.pl')";
+                sql = "INSERT INTO osoby VALUES (3, 'Mateusz', 'Kozak', 'mateusz@kozak.pl')";
                 statement.executeUpdate(sql);
 
                 System.out.println("Utworzono tabele i dodano rekordy");
