@@ -1,0 +1,34 @@
+version: '3.7'
+
+services:
+ java:
+  image: mateuszkozak97/lab9_chmura
+  restart: on-failure
+  depends_on:
+   - Cloud2020-88727
+  networks:
+   - Bridge-Zadanie-1
+  tty: true
+  stdin_open: true
+
+ Cloud2020-88732:
+  image: mysql:5
+  environment:
+   MYSQL_ROOT_USER: mkozak
+   MYSQL_ROOT_PASSWORD: haslo123
+   MYSQL_USER: mkozak
+   MYSQL_PASSWORD: haslo123
+   MYSQL_DATABASE: baza
+  container_name: Cloud2020-88727
+  networks:
+   Bridge-Zadanie-1:
+    ipv4_address: 10.0.10.3
+  expose:
+   - 3306
+
+networks:
+ Bridge-Zadanie-1:
+  driver: bridge
+  ipam:
+   config:
+    - subnet: 10.0.10.0/24
