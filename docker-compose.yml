@@ -5,9 +5,9 @@ services:
   image: mysql:5
   environment:
    MYSQL_ROOT_USER: mkozak
-   MYSQL_ROOT_PASSWORD: haslo123
+   MYSQL_ROOT_PASSWORD: password
    MYSQL_USER: mkozak
-   MYSQL_PASSWORD: haslo123
+   MYSQL_PASSWORD: password
    MYSQL_DATABASE: baza
   container_name: Cloud2020-88727
   networks:
