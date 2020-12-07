@@ -96,9 +96,8 @@ public class Main {
         }
 
         while (resultSet.next()) {
-            System.out.println("---------------------");
             for (int i = 1; i <= columnsCount; i++) {
-                System.out.print(resultSet.getString(i));
+                System.out.print(resultSet.getString(i) + " ");
             }
         }
 
